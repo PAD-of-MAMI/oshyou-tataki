@@ -10,3 +10,15 @@ Obj
 *.swp
 *.csproj
 v15
+#
+git fetch
+
+#
+git rebase origin/master
+
+#
+git add readme.md
+git rebase --continue
+
+#
+git push origin feature/xxx
