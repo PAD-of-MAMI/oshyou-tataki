@@ -22,3 +22,11 @@ git rebase --continue
 
 #
 git push origin feature/xxx
+
+#
+git rebase origin/feature/{brancname}
+
+git checkout master
+
+git pull
+
