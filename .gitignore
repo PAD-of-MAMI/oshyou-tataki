@@ -17,7 +17,7 @@ git fetch
 git rebase origin/master
 
 #
-git add readme.md
+git add gitignore.md
 git rebase --continue
 
 #
