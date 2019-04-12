@@ -10,23 +10,3 @@ Obj
 *.swp
 *.csproj
 v15
-#
-git fetch
-
-#
-git rebase origin/master
-
-#
-git add gitignore.md
-git rebase --continue
-
-#
-git push origin feature/xxx
-
-#
-git rebase origin/feature/{brancname}
-
-git checkout master
-
-git pull
-
