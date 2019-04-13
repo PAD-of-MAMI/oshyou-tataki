@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public GameObject canvasGame;
     public GameObject textScore;   //スコアテキスト
     public GameObject ImageBonz;
-    public GameObject LimitTimeText;
+    public String limitTimeText;
 
     //メンバ変数
     private int score = 0;  //現在のスコア
@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
+       limitTimeText = <Text>
         if (LimitTimeText == "0")
         {
 
