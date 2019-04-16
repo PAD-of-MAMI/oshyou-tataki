@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+using UnityEngine.SceneManagement;
+
 
 public class LimitTime : MonoBehaviour
 {
@@ -25,7 +27,12 @@ public class LimitTime : MonoBehaviour
         if(this.time < 0)
         {
             this.limitTimeUI.GetComponent<Text>().text = "オワオワリでぇ～す";
-            /* Invoke("GoBackTitle",3.0f); */
+            Invoke("GoResult",1.0f); 
+
+            if(PlayerPrefs.GetInt("HighScore") < score)
+            {
+                PlayerPrefs.SetInt("HighScore", score);
+            }
         }
         else
         {
@@ -34,8 +41,8 @@ public class LimitTime : MonoBehaviour
         }
     }
 
-  /*  void GoBackTitle()
+    void GoResult()
     {
-        SceneManager.LoadScene("TitleScene");
-    } */
+        SceneManager.LoadScene("ResultScene");
+    } 
 }

@@ -1,16 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 using UnityEngine.SceneManagement;
+using System;
 
 public class ResultManager : MonoBehaviour
 {
+    public Text highScoreLabel;
+
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-       
+        //ハイスコア表示
+        highScoreLabel.text = "High Score : " + PlayerPrefs.GetInt("HighScore") + "m";
     }
+
+    // Start is called before the first frame update
 
     // Update is called once per frame
     void Update()
