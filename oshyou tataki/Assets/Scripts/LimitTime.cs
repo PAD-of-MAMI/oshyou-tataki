@@ -39,6 +39,7 @@ public class LimitTime : MonoBehaviour
             //timeを文字列に変換した物をテキストに表示する
             this.limitTimeUI.GetComponent<Text>().text = this.time.ToString("F1");
         }
+
     }
 
     void GoResult()
