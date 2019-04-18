@@ -14,7 +14,7 @@ public class ResultManager : MonoBehaviour
     public void Start()
     {
         //ハイスコア表示
-        highScoreLabel.text = "High Score : " + PlayerPrefs.GetInt("HighScore") + "m";
+        highScoreLabel.text = "High Score : " + PlayerPrefs.GetInt("HighScore");
     }
 
     // Start is called before the first frame update
